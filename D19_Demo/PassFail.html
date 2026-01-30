@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pass / Fail Demo</title>
+</head>
+<body>
+
+<script>
+    // 1. Store subjects in an array
+    let subjects = ["Maths", "Science", "English"];
+
+    // 2. Accept user name
+    let userName = prompt("Enter your name:");
+
+    let totalMarks = 0;
+
+    // 3. Accept marks for each subject
+    for (let i = 0; i < subjects.length; i++) {
+        let marks = parseInt(prompt("Enter marks for " + subjects[i] + ":"));
+        totalMarks += marks;
+    }
+
+    // Calculate average
+    let average = totalMarks / subjects.length;
+
+    // 4. Determine pass or fail
+    let result;
+    if (average >= 40) {
+        result = "PASS";
+    } else {
+        result = "FAIL";
+    }
+
+    // Display result
+    document.write("Student Name: " + userName + "<br>");
+    document.write("Subjects: " + subjects.join(", ") + "<br>");
+    document.write("Average Marks: " + average + "<br>");
+    document.write("Result: " + result);
+</script>
+
+</body>
+</html>
