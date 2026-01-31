@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
+  background-color: #822078;
   padding: 20px;
 }
 
@@ -28,7 +28,7 @@ button:hover {
 }
 
 .card {
-  background: white;
+  background: rgb(108, 29, 29);
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
