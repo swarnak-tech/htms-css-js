@@ -1,4 +1,4 @@
-// STEP 2: Access DOM Objects (Create references to DOM elements)
+//   Access DOM Objects (Create references to DOM elements)
 const eventList = document.getElementById("eventList");
 const eventTitle = document.getElementById("eventTitle");
 const eventDesc = document.getElementById("eventDesc");
@@ -7,7 +7,7 @@ const registerBtn = document.getElementById("registerBtn");
 const unregisterBtn = document.getElementById("unregisterBtn");
 const addEventBtn = document.getElementById("addEventBtn");
 
-// STEP 3: Event Data (JavaScript Object)
+//   Event Data (JavaScript Object)
 let events = [
   { title: "Yoga Camp", desc: "Morning yoga session", participants: 10 },
   { title: "Music Night", desc: "Live music performance", participants: 25 },
@@ -16,7 +16,7 @@ let events = [
 
 let selectedEventIndex = null;
 
-// STEP 4: Display Events Dynamically (Add Elements)
+//  Display Events Dynamically (Add Elements)
 function displayEvents() {
   eventList.innerHTML = "";
 
@@ -30,7 +30,7 @@ function displayEvents() {
   });
 }
 
-// STEP 5: Handle Event Selection (Modify Content)
+//   Handle Event Selection (Modify Content)
 function selectEvent(index) {
   selectedEventIndex = index;
 
@@ -39,7 +39,7 @@ function selectEvent(index) {
   countSpan.textContent = events[index].participants;
 }
 
-// STEP 6: Register for Event (Modify DOM Content)
+//   Register for Event (Modify DOM Content)
 registerBtn.addEventListener("click", () => {
   if (selectedEventIndex === null) {
     alert("Please select an event first");
@@ -50,7 +50,7 @@ registerBtn.addEventListener("click", () => {
   countSpan.textContent = events[selectedEventIndex].participants;
 });
 
-// STEP 7: Unregister from Event (Remove / Modify)
+//   Unregister from Event (Remove / Modify)
 unregisterBtn.addEventListener("click", () => {
   if (selectedEventIndex === null) {
     alert("Please select an event first");
@@ -63,12 +63,12 @@ unregisterBtn.addEventListener("click", () => {
   }
 });
 
-// STEP 8: Add New Event Dynamically (Create + Append)
+//   Add New Event Dynamically (Create + Append)
 addEventBtn.addEventListener("click", () => {
   const title = prompt("Enter event title:");
   const desc = prompt("Enter event description:");
 
-  // STEP 9: Prevent Errors (Client-Side Validation)
+  //   Prevent Errors (Client-Side Validation)
   if (!title || !desc) {
     alert("Event title and description are required");
     return;
