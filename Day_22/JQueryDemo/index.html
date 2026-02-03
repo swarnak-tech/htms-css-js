@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Picker Demo</title>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+  <!--Slick Carousel-->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
+
+</head>
+
+<body style="font-family: Arial; padding: 20px;">
+
+  <h3>Appointment Date Selection</h3>
+
+  <label>Select Date:</label><br><br>
+  <input type="text" id="datePicker" placeholder="Click to select date">
+  <!--SLIDER-->
+  <div class="section">
+    <h3>2. Slider (Price Range)</h3>
+    <div id="priceSlider" class="slider-box"></div>
+    <p>Selected Price: ₹<span id="priceValue">500</span></p>
+  </div>
+
+  <!--CAROSEL-->
+  <div class="section">
+    <h3>3. Image Carousel</h3>
+    <div class="carousel">
+      <img src="Image/Image1.jpg" alt="Image 1">
+      <img src="Image/Image2.jpg" alt="Image 2">
+      <img src="Image/Image3.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $("#datePicker").datepicker({
+        dateFormat: "dd-mm-yy",
+        minDate: 0,
+        changeMonth: true,
+        changeYear: true
+      });
+    });
+
+    //Slider Initialization
+  $("#priceSlider").slider({
+    range: true,
+    min: 0,
+    max: 1000,
+    value: 500,
+    slide: function(event, ui) {
+      $("#priceValue").text(ui.value);
+    }
+  });
+
+  //CAROSEL INITIALIZATION
+  $(".carousel").slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+
+   </script>
+
+</body>
+</html>  
+ 

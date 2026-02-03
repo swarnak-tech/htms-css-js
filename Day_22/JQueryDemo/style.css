@@ -1,0 +1,28 @@
+body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .slider-box {
+      width: 300px;
+      margin-top: 10px;
+    }
+    .carousel img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    /*We use following notation for refering tags, clases, ID in CSS as well as Jquery 
+    .class  --> for class
+    #id     --> for ID
+    tag     --> for tag
+     Sytanx Reference for Jquery 
+    $(document).ready(function(){
+        // jQuery code goes here
+    });
+    For CSS Refering
+    selector {
+        property: value;
+    }*/

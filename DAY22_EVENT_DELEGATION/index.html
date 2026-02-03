@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation </title>
+</head>
+<body>
+    <!-- While understanding event delegation we have to understand following pointers
+    1) Event Bubbling : When an event is triggered on an element, it first runs the handlers on it, then on its parent, then all the way up on other ancestors. 
+    2) Event Capturing : In this phase, the event starts from the root and goes down to the target element.
+    3) Event Delegation : It is a technique involving adding a single event listener to a parent element that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future. -->
+
+        <ul id = "itemList">  <!--Attaching one Event listener so that it is applicable to all currnt and upcoming child Elements -->
+            <li>Item 1</li>
+            <li>Item 2</li>
+</ul>
+<script>
+    //Adding event  listener to the parent elamet
+    document.getElementById("itemList").addEventListener("click", function(event) {
+        //checking if the clicked element is a item
+        if (event.target&& event.target.nodeName === "LI") {
+            alert("You clicked on " + event.target.innerText);
+        }
+    });
+</script>
+</body>
+</html>
+
