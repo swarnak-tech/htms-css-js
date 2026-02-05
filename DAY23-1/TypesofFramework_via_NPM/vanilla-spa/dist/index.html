@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en"><head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <!--adding style-->
+      <style>body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#app {
+  padding: 20px;
+}
+
+nav a {
+  color: #333;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+#content {
+  background-color: #007bff;
+  min-height: 200px;
+  margin-top: 20px;
+}
+</style>
+      <script>function navigateTo(page) {
+    const contentDiv = document.getElementById("content");
+    switch(page){
+        case "home":
+            contentDiv.innerHTML = "<h2>Home Page</h2><p>Welcome to the Home Page.</p>";
+            break;
+        case "about":
+            contentDiv.innerHTML = "<h2>About Page</h2><p>This is the About Page.</p>";
+            break;
+        case "contact":
+            contentDiv.innerHTML = "<h2>Contact Page</h2><p>This is the Contact Page.</p>";
+            break;
+        default:
+            contentDiv.innerHTML = "<h2>Default Page</h2><p>Please select a navigation link.</p>";
+    }
+}
+
+</script>
+    </head>
+    <body>
+        <!--basic HTML FOR vanilla SPA-->
+        <div id="app">
+            <h1>Welcome to Vanilla SPA </h1>
+            <nav>
+                <a href="#home" onclick="navigateTo('home')">Home</a>
+                <a href="#about" onclick="navigateTo('about')">About</a>    
+                <a href="#contact" onclick="navigateTo('contact')">Contact</a>
+            </nav>
+            <div id="content">
+                <!--content will be dynamically loaded here -->
+
+
+            </div>
+        </div>
+    
+<script src="/vanilla-spa.59712999.js"></script></body></html>
