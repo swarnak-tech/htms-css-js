@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+     
+}
+.hero {
+    height:50vh;
+    background: linear-gradient(to right, rgb(13, 230, 114),#800707);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+.section {
+    display: none;
+     
+}
+.section.active {
+    display: block;
+}
+.logo {
+    font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+    .hero {
+        height: 40vh;
+        padding: 2rem;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+}   

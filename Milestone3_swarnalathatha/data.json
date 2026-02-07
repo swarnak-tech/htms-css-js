@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Garbage Collection",
+        "description": "Daily waste pickup service"
+    },
+    {
+        "name": "Water Supply",
+        "description": "Regular water supply maintenance"
+    },
+    {
+        "name": "Electicity",
+        "description": "Electicity supply and maintenance"
+    },
+    {
+        "name": "Road Repair",
+        "description": "Pothole and road surface repair"
+    },
+    {
+        "name": "Public Transportation",
+        "description": "Bus and train services"
+    },
+    {
+        "name": "Parks and Recreation",
+        "description": "Maintenance of public parks and recreational facilities"
+    },
+    {
+        "name": "Street Lighting",
+        "description": "Installation and maintenance of street lights"
+    },
+    {
+        "name": "Public Safety",
+        "description": "Police, fire, and emergency services"
+    },
+    {
+        "name": "Education",
+        "description": "Public schools and educational programs"
+    },
+    {
+        "name": "Healthcare",
+        "description": "Public health services and clinics"
+    }
+
+]

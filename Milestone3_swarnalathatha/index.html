@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Citizen Service Portal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class = "bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo">Smart City</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class= "nav-link text-white" href="#" data-section="home">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white" data-section="services">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white" data-section="request">Request Form</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white" data-section="Status">Request Status</a></li>
+                </ul>
+                </nav>  
+        </div>
+    </header>
+
+
+    <main class="container my-4">
+        <section id = "home" class="section active text-center hero">
+        <h2>Welcome to the Smart City Citizen Service Portal</h2>
+        <p>Your city Services ,just a click away.</p>
+        <button class="btn btn-primary" id="requestFormButton">Roll to Request Form</button>
+        </section>
+         
+        <section id="services" class="section">
+            <h2>Service Request Form</h2>
+            <form id ="requestForm" novalidate>
+                <div class="mb-3">
+                    <label>Name</label>
+                    <input type ="text" id ="name" class="form-control" />
+                    <small class="text-danger"></small>
+                </div>
+                <div class="mb-3">
+                    <label>Email</label>
+                    <input type ="email" id ="email" class="form-control" />
+                    <small class="text-danger"></small>
+                </div>
+
+                <div class="mb-3">
+                    <label>Service Type</label>
+                    <select id="serviceType" class="form-select">
+                        <option value="">Select a service</option>
+                        <option value="water">Water Supply</option>
+                        <option value="streetlight">Electicity</option>
+                        <option value="pothole">Road Repair</option>
+                    </select>
+                    <small class="text-danger"></small>
+                </div>
+                <div class="mb-3">
+                    <label>Description</label>
+                    <textarea id="description" class="form-control"></textarea>
+                    <small class="text-danger" </small>
+                </div>
+                <div id ="successMessage" class=" alert alert-success mt-3 d-none">
+                    Your request has been submitted successfully!
+                </div>
+                </section>
+
+                <!_-- Request Status Section -->
+        <section id="Status" class="section">
+            <h2>Request Status</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="requestTable">
+                    <!-- Status rows will be added here dynamically -->
+                </tbody>
+                </table>
+                </section>
+    </main>
+    <footer class="bg-dark text-white text-center p-3">
+        <p> 2026 Smart City. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
