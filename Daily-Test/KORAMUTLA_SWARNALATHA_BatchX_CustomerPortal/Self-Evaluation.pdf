@@ -1,54 +1,23 @@
-SELF-EVALUATION – RESPONSIVE CUSTOMER ENGAGEMENT PORTAL
+SELF EVALUATION
 
-Student Name: KORAMUTLA SWARNALATHA
-Case Study Name: Responsive Customer Engagement Portal
-Technologies Used: HTML5, CSS3, Bootstrap 5, JavaScript
-Browser Tested: Chrome, Edge
+Name: KORAMUTLA SWARNALATHA
+Case Study: Responsive Customer Engagement Portal
 
+I have completed the given case study using HTML, CSS, Bootstrap, and JavaScript.
 
-USER STORY COMPLETION
+All required user stories have been implemented including:
+- Semantic HTML structure
+- Forms with validation
+- Responsive layout
+- Bootstrap components
+- JavaScript DOM interaction
+- Basic accessibility
 
-User Story ID	Status
-US-01	        Completed
-US-02	        Completed
-US-03	        Completed
-US-04	        Completed
-US-05	        Completed
-US-06	        Completed
-US-07	        Completed
-US-08	        Completed
-US-09	        Completed
-US-10	        Completed
-US-11	        Completed
-US-12	        Completed
-US-13	        Completed
-US-14	        Completed
-US-15	        Completed
+Self Evaluation Level:
+I rate my work as Level 3 (Meets all requirements).
 
-SELF-EVALUATION RUBRICS
+Declaration:
+I declare that this project is my original work .
 
-Evaluation Area	Selected             Level
-Requirement Understanding           Level 3
-Structure & Semantics	            Level 3
-Code Correctness	                Level 3
-Styling & Layout	                Level 2
-Responsiveness	                    Level 3
-Accessibility (A11Y)	            Level 2
-JavaScript Logic	                Level 2
-DOM Interaction	                    Level 2
-Asynchronous Handling	            Level 2
-Bootstrap Usage	                    Level 3
-Code Reusability	                Level 2
-Performance & Optimization	        Level 2
-Validation & Error Handling	        Level 2
-Best Practices	                    Level 3
-Time Management	                    Level 3
+Signature:KORAMUTLA SWARNALATHA
 
-
-
-DECLARATION
-
-I declare that this project is my original work and no plagiarism has been used.
-
-Signature: ____________________
-Date: ____________________
