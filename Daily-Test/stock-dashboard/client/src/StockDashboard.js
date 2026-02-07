@@ -1,51 +1,86 @@
 import React, { Component, createRef } from "react";
 import io from "socket.io-client";
+import {
+  Chart as ChartJS,
+  LineElement,
+  CategoryScale,
+  LinearScale,
+  PointElement
+} from "chart.js";
+import { Line } from "react-chartjs-2";
 
-// Connect to backend
+ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
+
 const socket = io("http://localhost:5000");
 
 class StockDashboard extends Component {
   constructor() {
     super();
 
-    // Controlled component state
     this.state = {
       stockSymbol: "",
-      stockPrice: 0
+      stockPrice: 0,
+      prices: [],
+      theme: "light"
     };
 
-    // Uncontrolled component (previous searches)
     this.previousSearchRef = createRef();
   }
 
-  // Lifecycle method – runs once
   componentDidMount() {
     socket.on("stockUpdate", (price) => {
-      this.setState({ stockPrice: price });
+      this.setState((prevState) => ({
+        stockPrice: price,
+        prices: [...prevState.prices, price].slice(-10)
+      }));
     });
   }
 
-  // Handle controlled input + store history
   handleChange = (e) => {
     const symbol = e.target.value.toUpperCase();
     this.setState({ stockSymbol: symbol });
 
-    // Store previous searches (uncontrolled)
     if (this.previousSearchRef.current && symbol.length === 1) {
       this.previousSearchRef.current.value += symbol + "\n";
     }
   };
 
+  toggleTheme = () => {
+    this.setState({
+      theme: this.state.theme === "light" ? "dark" : "light"
+    });
+  };
+
   render() {
+    const isDark = this.state.theme === "dark";
+
+    const chartData = {
+      labels: this.state.prices.map((_, i) => i + 1),
+      datasets: [
+        {
+          label: "Stock Price Trend",
+          data: this.state.prices,
+          borderColor: "green",
+          tension: 0.3
+        }
+      ]
+    };
+
     return (
-      <div className="container mt-5">
+      <div className={`container mt-5 ${isDark ? "bg-dark text-white" : ""}`}>
         <div className="card p-4 shadow">
-          <h2 className="text-center text-primary mb-4">
-            📈 Stock Market Dashboard
-          </h2>
+          <div className="d-flex justify-content-between align-items-center">
+            <h2 className="text-primary">Stock Market Dashboard</h2>
+            <button
+              className="btn btn-secondary"
+              onClick={this.toggleTheme}
+            >
+              Toggle Theme
+            </button>
+          </div>
 
           {/* Controlled Component */}
-          <label className="form-label fw-bold">
+          <label className="form-label fw-bold mt-3">
             Enter Stock Symbol
           </label>
           <input
@@ -64,16 +99,20 @@ class StockDashboard extends Component {
             ref={this.previousSearchRef}
             className="form-control mb-4"
             rows="4"
-            placeholder="Your searched stock symbols will appear here"
             readOnly
           ></textarea>
 
-          {/* Live Stock Price */}
-          <div className="card bg-light p-3 text-center">
-            <h5 className="fw-bold">Current Stock Price</h5>
+          {/* Live Price */}
+          <div className="card bg-light p-3 text-center mb-4">
+            <h5>Current Stock Price</h5>
             <p className="fs-3 text-success">
               ₹ {this.state.stockPrice}
             </p>
+          </div>
+
+          {/* Chart */}
+          <div className="card p-3">
+            <Line data={chartData} />
           </div>
         </div>
       </div>
