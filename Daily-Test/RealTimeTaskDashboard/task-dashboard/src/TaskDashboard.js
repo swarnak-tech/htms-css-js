@@ -2,29 +2,39 @@ import { useEffect, useState } from "react";
 import socket from "./socket";
 
 function TaskDashboard({ user }) {
+
+    //state to store tasks and active users
   const [tasks, setTasks] = useState([]);
   const [users, setUsers] = useState([]);
 
+  //From input states
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [deadline, setDeadline] = useState("");
   const [assignedTo, setAssignedTo] = useState("");
 
+  //satrt to track edit mode
   const [editId, setEditId] = useState(null);
 
+  //Run once when component loads
   useEffect(() => {
+    //Recieve active users list from server
     socket.on("usersList", (data) => {
       setUsers(data);
     });
 
+    //Recieve initial tasks list from server
     socket.on("initialTasks", (data) => {
       setTasks(data);
     });
 
+
+    //Recieve updated tasks list from server
     socket.on("updateTasks", (data) => {
       setTasks(data);
     });
 
+    //Clean up socket listeners  
     return () => {
       socket.off("usersList");
       socket.off("initialTasks");
@@ -32,10 +42,13 @@ function TaskDashboard({ user }) {
     };
   }, []);
 
+
+  //Function to handle add/update task
   const handleAddTask = () => {
     if (!title) return;
 
     if (editId) {
+        //If editing ,emit update event
       socket.emit("updateTask", {
         _id: editId,
         title,
@@ -45,6 +58,7 @@ function TaskDashboard({ user }) {
       });
       setEditId(null);
     } else {
+        //If addinng new task
       socket.emit("addTask", {
         title,
         description,
@@ -53,16 +67,19 @@ function TaskDashboard({ user }) {
       });
     }
 
+    //Clear form fields
     setTitle("");
     setDescription("");
     setDeadline("");
     setAssignedTo("");
   };
 
+  //Delet task
   const handleDelete = (id) => {
     socket.emit("deleteTask", id);
   };
 
+  //Edit task
   const handleEdit = (task) => {
     setEditId(task._id);
     setTitle(task.title);
