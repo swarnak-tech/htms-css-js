@@ -91,7 +91,6 @@ D:\wipro_dotnet_final_Days_files\git_repository\htms-css-js\Azure-D30-31\Demo_We
 D:\wipro_dotnet_final_Days_files\git_repository\htms-css-js\Azure-D30-31\Demo_WebApp\obj\Debug\net10.0\staticwebassets.development.json
 D:\wipro_dotnet_final_Days_files\git_repository\htms-css-js\Azure-D30-31\Demo_WebApp\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\wipro_dotnet_final_Days_files\git_repository\htms-css-js\Azure-D30-31\Demo_WebApp\obj\Debug\net10.0\swae.build.ex.cache
-D:\wipro_dotnet_final_Days_files\git_repository\htms-css-js\Azure-D30-31\Demo_WebApp\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\wipro_dotnet_final_Days_files\git_repository\htms-css-js\Azure-D30-31\Demo_WebApp\obj\Debug\net10.0\Demo_WebApp.dll
 D:\wipro_dotnet_final_Days_files\git_repository\htms-css-js\Azure-D30-31\Demo_WebApp\obj\Debug\net10.0\refint\Demo_WebApp.dll
 D:\wipro_dotnet_final_Days_files\git_repository\htms-css-js\Azure-D30-31\Demo_WebApp\obj\Debug\net10.0\Demo_WebApp.pdb

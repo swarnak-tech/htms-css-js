@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\wipro_dotnet_final_Days_files\\git_repository\\htms-css-js\\Azure-D30-31\\Demo_WebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EF1605D6-4F23-43CA-ACB2-1260B8AC438D}|Demo_WebApp.csproj|d:\\wipro_dotnet_final_days_files\\git_repository\\htms-css-js\\azure-d30-31\\demo_webapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF1605D6-4F23-43CA-ACB2-1260B8AC438D}|Demo_WebApp.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A6961482-87D6-5644-E585-7B5FD53E42BF}|Demo_WebApp.csproj|d:\\wipro_dotnet_final_days_files\\git_repository\\htms-css-js\\azure-d30-31\\demo_webapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6961482-87D6-5644-E585-7B5FD53E42BF}|Demo_WebApp.csproj|solutionrelative:pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF1605D6-4F23-43CA-ACB2-1260B8AC438D}|Demo_WebApp.csproj|d:\\wipro_dotnet_final_days_files\\git_repository\\htms-css-js\\azure-d30-31\\demo_webapp\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF1605D6-4F23-43CA-ACB2-1260B8AC438D}|Demo_WebApp.csproj|solutionrelative:pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A6961482-87D6-5644-E585-7B5FD53E42BF}|Demo_WebApp.csproj|d:\\wipro_dotnet_final_days_files\\git_repository\\htms-css-js\\azure-d30-31\\demo_webapp\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6961482-87D6-5644-E585-7B5FD53E42BF}|Demo_WebApp.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF1605D6-4F23-43CA-ACB2-1260B8AC438D}|Demo_WebApp.csproj|d:\\wipro_dotnet_final_days_files\\git_repository\\htms-css-js\\azure-d30-31\\demo_webapp\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EF1605D6-4F23-43CA-ACB2-1260B8AC438D}|Demo_WebApp.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A6961482-87D6-5644-E585-7B5FD53E42BF}|Demo_WebApp.csproj|d:\\wipro_dotnet_final_days_files\\git_repository\\htms-css-js\\azure-d30-31\\demo_webapp\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A6961482-87D6-5644-E585-7B5FD53E42BF}|Demo_WebApp.csproj|solutionrelative:pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EF1605D6-4F23-43CA-ACB2-1260B8AC438D}|Demo_WebApp.csproj|d:\\wipro_dotnet_final_days_files\\git_repository\\htms-css-js\\azure-d30-31\\demo_webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EF1605D6-4F23-43CA-ACB2-1260B8AC438D}|Demo_WebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6961482-87D6-5644-E585-7B5FD53E42BF}|Demo_WebApp.csproj|d:\\wipro_dotnet_final_days_files\\git_repository\\htms-css-js\\azure-d30-31\\demo_webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6961482-87D6-5644-E585-7B5FD53E42BF}|Demo_WebApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,12 +49,8 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\wipro_dotnet_final_Days_files\\git_repository\\htms-css-js\\Azure-D30-31\\Demo_WebApp\\Pages\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
@@ -67,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\wipro_dotnet_final_Days_files\\git_repository\\htms-css-js\\Azure-D30-31\\Demo_WebApp\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
